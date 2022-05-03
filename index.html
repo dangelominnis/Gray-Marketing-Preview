@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------SEO-Optimization---------------- -->
+    <meta name=“description” content="Logo Genius, a Dallas graphic designer in Dallas, Texas.  Offer logo, SEO, social media management, Dallas web design, and web development." />
+    <meta name="keywords" content="Logo Genius, Logo, Genius, Graphic Design, Web Design">
+    <meta name="author" content="Logo Genius">
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="DogpcsIsv8MfOJNDSMVMBvUm1QvIUQ4CYFODmIn3haI"/>
+    <!-- ----------------SEO-Optimization---------------- -->
+
+    <title>Gray Marketing</title>
+    <!-- Google Fonts -->
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="header-animation.scss">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-box">
+                <div class="header-text">
+                    <h1>Currently updating ... we'll be back soon</h1>
+                    <h4>Contact us at (347) 622 - 0462 or by email at support@graymarketsolutions.com</h4>
+                </div>
+                <!-- <div class="header-form">
+                    <form name="header" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="header">
+                        <div class="header-item">
+                            <input type="email" name="Email Address" id="" class="input" placeholder="Enter your email address" required>
+                            <input type="submit" value="Let's make a logo!" class="btn-submit">
+                        </div>
+                    </form>
+                </div> -->
+                <div class="header-image">
+                    <img src="img/GRAY-logo-01.png" alt="">
+                </div>
+                <!-- <div class="header-button">
+                    <a href="#services" class="btn-black-transparent">Let's Get Started &#8594;</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/GRAY-logo-02.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">menu</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="#">About</a>
+                <a class="nav__link" href="#">Services</a>
+                <a class="nav__link" href="#">Portfolio</a>
+                <a class="nav__link" href="#">Careers</a>
+                <a class="btn-black-transparent" href="#">Start A Project</a>
+                <a class="btn-black" href="#">Sign Up</a>
+                <a href="#" class="btn-login">Login &#8594;</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+            }, {
+                threshold: 0.1
+            });
+            
+            observer.observe(document.querySelector(".header"));
+        });
+        </script>
+
+<!-- Certifications Section -->
+<!-- <section class="certifications">
+    <div class="container">
+        <div class="certifications-box">
+            <div class="certifications-item">
+                <img src="img/GRAY-logo-02.png" alt="">
+            </div>
+            <div class="certifications-item">
+                <img src="img/GRAY-logo-02.png" alt="">
+            </div>
+            <div class="certifications-item">
+                <img src="img/GRAY-logo-02.png" alt="">
+            </div>
+            <div class="certifications-item">
+                <img src="img/GRAY-logo-02.png" alt="">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Services Section -->
+<!-- <section class="services" id="services">
+    <div class="container">
+        <div class="services-box">
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-01.png" alt="">
+                        </div>
+                        <h3><span>01</span> Digital Advertising</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-02.png" alt="">
+                        </div>
+                        <h3><span>02</span> Web Design</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-03.png" alt="">
+                        </div>
+                        <h3><span>03</span> Logo Design</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-04.png" alt="">
+                        </div>
+                        <h3><span>04</span> SEO</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-05.png" alt="">
+                        </div>
+                        <h3><span>05</span> E-commerce</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-06.png" alt="">
+                        </div>
+                        <h3><span>06</span> Email Marketing</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-07.png" alt="">
+                        </div>
+                        <h3><span>07</span> Photo Editing</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-08.png" alt="">
+                        </div>
+                        <h3><span>08</span> App Development</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="services-item">
+                <a href="">
+                    <div class="services-title">
+                        <div class="services-icon">
+                            <img src="img/gray-icon-09.png" alt="">
+                        </div>
+                        <h3><span>09</span> Copywriting</h3>
+                    </div>
+                    <div class="services-info">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias totam, corrupti adipisci tempore facilis quo temporibus unde iure quos eum!</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="services-button">
+            <a href="#feature1" class="btn-black-transparent">View More Services &#8594;</a>
+        </div>
+    </div>
+</section> -->
+
+<!-- Feature 1 Section -->
+<!-- <section class="feature bg-light-grey" id="feature1">
+    <div class="container">
+        <div class="feature-box">
+
+            <div class="feature-text">
+                <h3><span>01</span> Digital Solutions</h3>
+                <div class="feature-info">
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita reprehenderit dicta dolores alias iusto tempore repudiandae, soluta dolor voluptas enim placeat ipsa inventore non, error dolorem!</p>
+                <div class="feature-button">
+                    <a href="#web" class="btn-black-transparent">Work With Us &#8594;</a>
+                </div>
+            </div>
+
+            <div class="feature-title-box">
+
+                <div class="feature-title">
+                    <h2>Solutions <span>01</span></h2>
+                    <h5 class="feature-title-und">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                </div>
+                    
+                <div class="feature-title">
+                    <a href="#feature2">
+                        <h2>Design <span>02</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature3">
+                        <h2>Development <span>03</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature4">
+                        <h2>Optimization <span>04</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Feature 2 Section -->
+<!-- <section class="feature bg-light-grey" id="feature2">
+    <div class="container">
+        <div class="feature-box">
+
+            <div class="feature-text">
+                <h3><span>02</span> Design & Branding</h3>
+                <div class="feature-info">
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita reprehenderit dicta dolores alias iusto tempore repudiandae, soluta dolor voluptas enim placeat ipsa inventore non, error dolorem!</p>
+                <div class="feature-button">
+                    <a href="#web" class="btn-black-transparent">Work With Us &#8594;</a>
+                </div>
+            </div>
+
+            <div class="feature-title-box">
+
+                <div class="feature-title">
+                    <a href="#feature1">
+                        <h2>Solutions <span>01</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+                
+                <div class="feature-title">
+                    <h2>Design <span>02</span></h2>
+                    <h5 class="feature-title-und">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature3">
+                        <h2>Development <span>03</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature4">
+                        <h2>Optimization <span>04</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Feature 3 Section -->
+<!-- <section class="feature bg-light-grey" id="feature3">
+    <div class="container">
+        <div class="feature-box">
+
+            <div class="feature-text">
+                <h3><span>03</span> Web & Mobile Development</h3>
+                <div class="feature-info">
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita reprehenderit dicta dolores alias iusto tempore repudiandae, soluta dolor voluptas enim placeat ipsa inventore non, error dolorem!</p>
+                <div class="feature-button">
+                    <a href="#web" class="btn-black-transparent">Work With Us &#8594;</a>
+                </div>
+            </div>
+
+            <div class="feature-title-box">
+                    
+                <div class="feature-title">
+                    <a href="#feature1">
+                        <h2>Solutions <span>01</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature2">
+                        <h2>Design <span>02</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <h2>Development <span>03</span></h2>
+                    <h5 class="feature-title-und">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature4">
+                        <h2>Optimization <span>04</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Feature 4 Section -->
+<!-- <section class="feature bg-light-grey" id="feature4">
+    <div class="container">
+        <div class="feature-box">
+
+            <div class="feature-text">
+                <h3><span>04</span> Website Optimization</h3>
+                <div class="feature-info">
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                    <div class="feature-detail">
+                        <h4>- On-site SEO</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita reprehenderit dicta dolores alias iusto tempore repudiandae, soluta dolor voluptas enim placeat ipsa inventore non, error dolorem!</p>
+                <div class="feature-button">
+                    <a href="#web" class="btn-black-transparent">Work With Us &#8594;</a>
+                </div>
+            </div>
+
+            <div class="feature-title-box">
+                    
+                <div class="feature-title">
+                    <a href="#feature1">
+                        <h2>Solutions <span>01</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                <div class="feature-title">
+                    <a href="#feature2">
+                        <h2>Design <span>02</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+
+                
+                <div class="feature-title">
+                    <a href="#feature3">
+                        <h2>Development <span>03</span></h2>
+                        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                    </a>
+                </div>
+                
+                <div class="feature-title">
+                    <h2>Optimization <span>04</span></h2>
+                    <h5 class="feature-title-und">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, deserunt.</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Process 1 Section -->
+<!-- <section class="process" id="process1">
+    <div class="container">
+        <div class="process-title-box">
+            <div class="process-title process-title-und">
+                <h2><span>01</span> Advertising</h2>
+            </div>
+            <div class="process-title">
+                <a href="#process2"><span>02</span> Branding</a>
+            </div>
+            <div class="process-title">
+                <a href="#process3"><span>03</span> E-commerce</a>
+            </div>
+        </div>
+        <div class="process-box">
+            <div class="process-image">
+                <img src="img/gray-icon-01.png" alt="">
+            </div>
+            <div class="process-text">
+                <h3>Our Approach</h3>
+                <h4>Advertising 01</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Process 2 Section -->
+<!-- <section class="process" id="process2">
+    <div class="container">
+        <div class="process-title-box">
+            <div class="process-title">
+                <a href="#process1"><span>01</span> Advertising</a>
+            </div>
+            <div class="process-title process-title-und">
+                <h2><span>02</span> Branding</h2>
+            </div>
+            <div class="process-title">
+                <a href="#process3"><span>03</span> E-commerce</a>
+            </div>
+        </div>
+        <div class="process-box">
+            <div class="process-image">
+                <img src="img/gray-icon-02.png" alt="">
+            </div>
+            <div class="process-text">
+                <h3>Our Approach</h3>
+                <h4>Branding 02</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Process 3 Section -->
+<!-- <section class="process" id="process3">
+    <div class="container">
+        <div class="process-title-box">
+            <div class="process-title">
+                <a href="#process1"><span>01</span> Advertising</a>
+            </div>
+            <div class="process-title">
+                <a href="#process2"><span>02</span> Branding</a>
+            </div>
+            <div class="process-title process-title-und">
+                <h2><span>03</span> E-commerce</h2>
+            </div>
+        </div>
+        <div class="process-box">
+            <div class="process-image">
+                <img src="img/gray-icon-05.png" alt="">
+            </div>
+            <div class="process-text">
+                <h3>Our Approach</h3>
+                <h4>E-Commerce 03</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis a veritatis non quasi doloremque, eius enim quae excepturi tenetur?</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Credibility Section -->
+<!-- <section class="credibility">
+    <div class="container">
+        <div class="credibility-box">
+            <div class="credibility-header">
+                <h2>Our Numbers:</h2>
+            </div>
+            <div class="credibility-info">
+                <div class="credibility-text">
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nesciunt cumque rem minus, eaque quo ratione tenetur, necessitatibus magnam alias hic porro, asperiores magni repellat.</h4>
+                </div>
+                <div class="credibility-numbers">
+
+                    <div class="credibility-item">
+                        <div class="credibility-detail">
+                            <h3>100</h3>
+                            <h6><span>+</span></h6>
+                        </div>
+                        <p>Companies Helped</p>
+                    </div>
+
+                    <div class="credibility-item">
+                        <div class="credibility-detail">
+                            <h3>10</h3>
+                            <h6>K</h6>
+                        </div>
+                        <p>Ad Sales</p>
+                    </div>
+                    
+                    <div class="credibility-item">
+                        <div class="credibility-detail">
+                            <h3>50</h3>
+                            <h6>K</h6>
+                        </div>
+                        <p>Ads Published</p>
+                    </div>
+
+                    <div class="credibility-item">
+                        <div class="credibility-detail">
+                            <h3>10</h3>
+                            <h6>M</h6>
+                        </div>
+                        <p>Ad Money Managed</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Team Section -->
+<!-- <section class="team">
+    <div class="container">
+        <h2>The Team Behind The Magic:</h2>
+        <div class="team-box">
+            <div class="team-members">
+
+                <div class="team-item">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Founder</h3>
+                </div>
+    
+                <div class="team-item">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Founder</h3>
+                </div>
+    
+                <div class="team-item">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Founder</h3>
+                </div>
+    
+                <div class="team-item">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Founder</h3>
+                </div>
+
+            </div>
+            <div class="team-info">
+                <h2>Want To Join Our Team?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, nam cum rerum quis quam amet optio eligendi saepe doloremque perferendis.</p>
+                <div class="team-button">
+                    <a href="#" class="btn-purple">Come Join Us &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Web Section -->
+<!-- <section class="web" id="web">
+    <div class="container">
+        <div class="web-box">
+            <h4>Join Us!</h4>
+            <h2>Want to join our team? Click the button below to get started.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus repellat, architecto deserunt quis nihil ducimus perferendis eligendi! Recusandae, ab!</p>
+            <div class="web-button">
+                <a href="#" class="btn-black-transparent">Join The Team &#8594;</a>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Portfolio Section -->
+<!-- <section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2>Companies We've Helped</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus repellat, architecto deserunt quis nihil ducimus perferendis eligendi! Recusandae, ab!</p>
+        <div class="portfolio-box">
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+            <div class="portfolio-item">
+                <img src="img/GRAY-logo-03.png" alt="">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Reviews Section -->
+<!-- <section class="reviews">
+    <div class="container">
+        <div class="reviews-box">
+            <div class="reviews-textbox">
+                <div class="reviews-card">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Absolutely Stunning</h3>
+                    <h4>Anthony, GRAY Marketing</h4>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed earum."</p>
+                </div>
+                <div class="reviews-card">
+                    <img src="img/portrait2.jpg" alt="">
+                    <h3>Absolutely Stunning</h3>
+                    <h4>Anthony, GRAY Marketing</h4>
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sed earum."</p>
+                </div>
+            </div>
+            <div class="reviews-contact">
+                <div class="reviews-text">
+                    <h1>Contact us to start a project!</h1>
+                    <h4>Reach out to us about your branding needs and let's get started on a project!</h4>
+                </div>
+                <div class="reviews-form">
+                    <form name="reviews" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="reviews">
+                        <div class="reviews-item">
+                            <input type="email" name="Email Address" id="" class="input" placeholder="Enter your email address" required>
+                            <input type="submit" value="Let's go!" class="btn-submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="reviews-image">
+                    <img src="img/fiverr-reviews-01.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Footer Section -->
+<section class="footer" id="footer">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-box-company">
+                <img src="img/GRAY-logo-03.png" alt="image">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta provident harum optio assumenda, fugiat ullam odit deleniti fuga dolorum architecto iusto totam fugit quas.</p>
+                <p>Copyright © 2022 Gray Marketing Solutions - All rights reserved.</p>
+            </div>
+            <div class="footer-box-links">
+                <h3>Site Map</h3>
+                <ul>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Portfolio</li></a>
+                    <a href="#"><li>Careers</li></a>
+                </ul>
+            </div>
+            <div class="footer-box-socials">
+                <h3>Social Media</h3>
+                <a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+                <a href="#" target="_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#" target="_blank"><li><i class="fab fa-instagram"></i></li></a>
+            </div>
+            <div class="footer-box-development">
+                <h3>Contact Info</h3>
+                <a href="tel:3476220462"><li>(347) 622 - 0462</li></a>
+                <a href="mailto:support@graymarketsolutions.com"><li>support@graymarketsolutions.com</li></a>
+                <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------- MODALS -------------------- -->
+<!-- Boiler Plate -->
+<!-- <div id="target-content">
+    <a href="#" class="close"></a>
+    <div id="target-inner">
+      <h2>Modal Heading</h2>
+      <p>Modal Content</p>
+    </div>
+  </div> -->
+
+<!-- Services Details Modal -->
+<div id="services-details-content">
+    <a href="#services" class="close"></a>
+    <div id="services-details-inner">
+      
+        <!-- services Details Section -->
+        <section class="services-details padding-top-8 padding-bottom-8">
+            <div class="container">
+                <h4 class="tertiary-heading-primary margin-bottom-1">Full Package Details</h4>
+                <h2 class="primary-heading-primary margin-bottom-4">Puppy Packages</h2>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 1 | $399</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    2 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($200) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Traveling charge for over 35 miles Renton
+                </p>
+        
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 2 | $999</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    4 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($600) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Text support ($100) <br>
+                    Call support ($150) <br>
+                    Access to monthly meet in the park training sessions ($50) <br>
+                    Traveling charge for over 50 miles Renton
+                </p>
+
+                <h3 class="tertiary-heading-primary margin-bottom-2">Package 3 | $2500</h3>
+                <p class="primary-text-grey margin-bottom-4">
+                    7 In-home training sessions <br>
+                    first session is 90-120 minutes ($250), second session is 60-80 minutes ($1200) <br>                   
+                    Slip collar ($15) <br>                   
+                    Leash ($20) <br>
+                    Text support ($100) <br>
+                    Call support ($150) <br>
+                    Access to monthly meet in the park training sessions ($50) <br>
+                    36 hour training and boarding ($1200) <br>
+                    E-collar and e-collar training ($400) <br>
+                    15% discount on all future trainings <br>
+                    No traveling charge for the greater Seattle area 
+                </p>
+        
+            </div>
+        </section>
+
+    </div>
+</div>
+<!-- Services Details Modal -->
+
+<!-- --------------------- MODALS -------------------- -->
+</body>
+</html>
